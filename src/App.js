@@ -24,9 +24,9 @@ function App() {
         <Route path="/schedule" element={<Schedule />} />
         <Route path="/courses/materials" element={<Materials />} />
         <Route path="/courses/materials/:id" element={<MaterialsDetails />}>
-          <Route path="details/:Id" element={<Late />} />
-          <Route path="details/:Id" element={<Submitted />} />
-          <Route path="details:Id" element={<Waiting />} />
+          <Route path="details/late" element={<Late />} />
+          <Route path="details/submitted" element={<Submitted />} />
+          <Route path="details/waiting" element={<Waiting />} />
         </Route>
         <Route path="/courses/students" element={<Students />} />
         <Route path="/courses/students/:id" element={<StudentsDetails />} />
